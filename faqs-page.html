@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+/* Container for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Button styling */
+.dropdown-button {
+    
+    border: none;
+    cursor: pointer;
+    display: flex;
+    border-radius:10px ;
+   
+ 
+}
+
+/* Arrow styling */
+.arrow {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+    </style>
+    <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+    var dropdownButton = document.querySelector('.dropdown-button');
+    var dropdownContent = document.querySelector('.dropdown-content');
+
+    dropdownButton.addEventListener('click', function () {
+        var isVisible = dropdownContent.style.display === 'block';
+        dropdownContent.style.display = isVisible ? 'none' : 'block';
+    });
+
+    // Close the dropdown if clicked outside
+    document.addEventListener('click', function (event) {
+        if (!dropdownButton.contains(event.target) && !dropdownContent.contains(event.target)) {
+            dropdownContent.style.display = 'none';
+        }
+    });
+});
+
+    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQS Page</title>
+  
+  <link rel="stylesheet" href="faqs-page.css">
+
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900' rel='stylesheet'>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" >
+</head>
+<body>
+    <section class="header">
+
+        <nav>
+            <a href="Homepage.html"> <img src="./images/Vector speedometer and map pointer logo combination. Tachometer and gps locator symbol or icon 1.png" ></a>
+            <div class="nav-links">
+                <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+
+                <ul>
+                    <li ><a href="Homepage.html" >Home</a></li>
+                    <li><a href="">Our solutions</a></li>
+                    <li><a href="contactUs.html">Contact us</a></li>
+                    <button class="btn1" onclick="location.href='quotepage.html';">Get quote</button>
+                
+                </ul>
+
+                
+            </div>
+
+            <!-- <i class="fa fa-bars"> </i> -->
+
+
+            
+                <!-- <a href="Homepage.html"> <img src="./images/Frame 52.png", Width="88px", Height="40px",Radius="22px",
+                    Border="1px" ,Padding="10px, 16px, 10px, 16px",Gap="10px" ></a>
+                
+                <a href="Homepage.html"> <img src="./images/Frame 5.png", Width="88px", Height="40px",Radius="22px",
+                    Border="1px" ,Padding="10px, 16px, 10px, 16px",Gap="10px" ></a>
+                
+                <a href="Homepage.html"> <img src="./images/Frame 4.png", Width=200px, Height=200px, Radius="22px",
+                    Border="1px" ,Padding="10px, 16px, 10px, 16px",Gap="10px" ></a>
+                 -->
+
+
+            
+                <div class="button-space">
+                    <button class="btn2">Sign in</button>
+                <button class="btn">Sign up</button>
+           
+                </div>
+             </nav>
+       
+            </div>
+            
+
+
+
+    </section>    
+
+
+        <!-- -------------------------------------Section two---------------------- -->
+
+        <section class="sec-two">
+
+           
+            <div class="sec-one-img">
+                <div>
+                    <img src="./images/curious-woman-looking-away 1.png">
+                </div>
+               
+                <div class="alignment">
+                   <div class="img-align">
+                    <img src="./images/Group 93.png" class="img-align">
+                   </div>
+                   <div>
+                    <h1>  Frequently Asked Questions</h1>
+                    <p> If you have questions or inquiries just check out the most 
+                        frequent questions asked by our customers so you can get a
+                         better insight about how PassTo work.</p>
+                         <div class="search">
+                            <img src="./images/fi-rs-search.png">
+                            <input type="text" id="search" name="search" placeholder="Search by a question.." >
+                         </div>
+                        
+                   </div>
+                  
+                </div>
+               
+                
+            </div>
+               
+           
+
+        <!-- ---------------------------------------Section twoo-------------------------------- -->
+
+        <section class="sec-two">
+
+            <div class="sec-back">
+
+                <p>How GPS Vehicle Tracking Works FAQs</p>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</span> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+
+               
+
+            </div>
+            <div class="sec-back">
+
+                <p>What is involved in tracking a vehicle?</p>
+
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</span> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec-back">
+
+                <p>What is the difference between cellular GPS and satellite GPS? Which is best?</p>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</sp-an> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec-back">
+
+                <p>What happens if I have a cellular device and my vehicle loses cellular coverage?</p>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</span> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sec-back">
+                <p>Can I use multiple types of devices in one account?</p>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</span> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+            </div>
+              
+            <div class="sec-back">
+
+                <p>Can I install these devices on my own?</p>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</span> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sec-back">
+
+                <p>How long will it take to ship my order?</p>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</span> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sec-back">
+
+                <p>What if I have multiple locations or offices?</p>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</span> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec-back">
+
+                <p>Do I need to pay an additional fee for software?</p>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</span> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sec-back">
+
+                <p>How fast does my internet need to be?</p>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</span> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sec-back">
+
+
+                <p>What cost-effective Dashcam option is best for me?</p>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</span> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec-back">
+
+                <p> I need multiple angles of view from my dashcam, which is right for me?</p>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <!-- <span class="arrow">&#9662;</span> -->
+                        <img src="./images/Group 96.png"> <!-- Down arrow -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        
+        <!-- --------------------------------------------Section threee--------------------------------------->
+
+        <section class="fourth_sec">
+        
+            <div class="fourth_background"> 
+                
+                <div class="fourth_sec_row">
+    
+                    <div class="fourth_sec_col">
+    
+                        <h1>
+                            Proactive Engagement
+                        </h1>
+                        <p>
+                            Defines our working style, where anticpation meets
+                            action, driving forward with purpose and initiative.
+                        </p>
+            
+                        <button class="btn-contact-again"> Contact Us </button>
+    
+                    </div>
+    
+                  
+        
+                    <div  class="fourth_sec_col">
+        
+                        <img src="./images/gif.gif">
+                    </div>  
+        
+                </div>
+              
+            </div>
+    
+          </section>
+    
+
+
+   
+    
+    <!-- ------------------------------Footer------------------------- -->
+
+    <footer class="footer">
+
+        <div class="footer-back">
+
+           <div class="details">
+            
+            <img class="logo" src="./images/Vector speedometer and map pointer logo combination. Tachometer and gps locator symbol or icon 1.png">
+
+            <ul class="sci"> 
+                <li>
+                 <a href="#"> <img src="./images/Vector (2).png"></a>
+            
+                <a href="#"> <img src="./images/facebook.png"></a>
+                <a href="#"> <img src="./images/Group.png"></a>
+                <a href="#"> <img src="./images/xx.png"></a>
+                </li>
+
+                <li class="icons"> <a href="#"><img src="./images/iconamoon_email-light.png"> <b>onboarding@safetraccar.com</b></a></li>
+                <li class="icons"> <a href="#"><img src="./images/streamline_location-pin-3.png"> <b>7240 Brooklyn Blvd, Suite 110 Brooklyn Park, MN 55429</b></a></li>
+
+                
+
+    
+            </ul>
+        
+
+           </div>
+
+           <div class="Solutions">
+            <h2>SOLUTIONS</h2>
+            <ul>
+                <li> <a href="#">Business Fleets</a></li>
+                <li> <a href="#"> Leader Fleets</a></li>
+                <li> <a href="#">Dealership Fleets </a></li>
+                <li> <a href="#"> Auto Insurance</a></li>
+            </ul>
+
+             </div>
+
+
+           <div class="apps">
+            <h2>APPS</h2>
+            <ul>
+                <li> <a href="#">Android</a></li>
+                <li> <a href="#"> IOS</a></li>
+              
+            </ul>
+
+             </div>
+
+           <div class="Help">
+            <h2>HELP</h2>
+
+            <ul>
+                <li> <a href="#">Help Center</a></li>
+                <li> <a href="#"> Contact Support</a></li>
+                <li> <a href="#">Return Policy </a></li>
+               
+            </ul>
+
+            
+        </div>
+
+           <div class="company">
+            <h2>COMPANY</h2>
+
+            <ul>
+                <li> <a href="#">About</a></li>
+                
+            </ul>
+
+    </div>
+        </div>
+        
+        <hr />
+        <div class="copylinks">
+ 
+         
+            <p>
+                © Copyright 2024 - SafeTraccar 
+            </p>
+            <ul>
+                
+                <li>  <a href="contactUs.html">Contact us</a></li>
+                <li> <a href="faqs-page.html"> FAQS</a></li> 
+
+                <li>
+                    <a href="Terms.html">Terms of use </a>
+                </li>
+              <li>
+                
+                <a href="privacyPolicy.html">Privacy Policy </a>
+            
+              </li>
+            
+               
+            </ul>
+             
+        </div>
+        
+        
+
+        
+       
+    </footer>
+
+   
+</body>
+</html>
